@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "PetWatch",
+    "slug": "petwatch",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "petwatch",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "color": "#C2410C",
+          "defaultChannel": "petwatch-recordatorios",
+          "enableRemoteNotifications": false
+        }
+      ],
+      "expo-font",
+      "@react-native-community/datetimepicker",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "PetWatch usa tus fotos para la imagen de perfil de tus mascotas.",
+          "cameraPermission": "PetWatch usa la cámara para tomar la foto de tus mascotas."
+        }
+      ]
+    ],
+    "android": {
+      "permissions": [
+        "SCHEDULE_EXACT_ALARM"
+      ]
+    },
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

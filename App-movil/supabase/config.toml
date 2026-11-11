@@ -1,0 +1,44 @@
+# Configuración de Edge Functions de PetWatch (fase del smartwatch).
+# Este archivo no existía; solo se agregaron secciones [functions.*].
+# Si necesitas el resto de la configuración del CLI, agrégala debajo sin borrar
+# estas secciones (no uses `supabase init --force`).
+#
+# Las funciones que usa el reloj validan su propia credencial (rate limit,
+# challenge secret o device token), por eso el gateway no verifica un JWT.
+# Las funciones que usa la app móvil conservan la verificación JWT normal.
+
+# Funciones utilizadas por el smartwatch
+[functions.watch-pair-start]
+verify_jwt = false
+
+[functions.watch-pair-status]
+verify_jwt = false
+
+# Autenticadas con "Authorization: Bearer <device_token>" (requireDevice).
+[functions.watch-pets-list]
+verify_jwt = false
+
+[functions.watch-tasks-list]
+verify_jwt = false
+
+[functions.watch-task-update]
+verify_jwt = false
+
+[functions.watch-walk-push]
+verify_jwt = false
+
+[functions.watch-incident-push]
+verify_jwt = false
+
+# Funciones utilizadas por PetWatch Mobile
+[functions.watch-pair-preview]
+verify_jwt = true
+
+[functions.watch-pair-approve]
+verify_jwt = true
+
+[functions.watch-devices-list]
+verify_jwt = true
+
+[functions.watch-device-revoke]
+verify_jwt = true

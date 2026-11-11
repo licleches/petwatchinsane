@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PetWatch</string>
+    <string name="tile_label">PetWatch: paseo e incidente</string>
+    <string name="tile_description">Accesos rápidos a Paseo e Incidente</string>
+    <string name="channel_alarms_name">Tareas de mascotas</string>
+    <string name="channel_alarms_description">Alarmas de comida, medicamento, paseo y otros cuidados</string>
+    <string name="channel_walk_name">Paseo en curso</string>
+    <string name="channel_walk_description">Se muestra mientras el reloj registra un paseo</string>
+    <string name="channel_sync_name">Sincronización</string>
+    <string name="channel_sync_description">Avisos cuando algo no se pudo enviar</string>
+</resources>

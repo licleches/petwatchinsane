@@ -1,0 +1,34 @@
+# Secretos (NUNCA subir)
+.env
+.env.*
+!.env.example
+local.properties
+*.jks
+*.keystore
+
+# App móvil (Expo)
+node_modules/
+.expo/
+dist/
+web-build/
+app-movil/supabase/.temp/
+app-movil/supabase/.branches/
+
+# App reloj (Android)
+.gradle/
+build/
+.idea/
+.kotlin/
+.cxx/
+*.iml
+captures/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Respaldos comprimidos
+*.rar
+*.zip
+*.7z
